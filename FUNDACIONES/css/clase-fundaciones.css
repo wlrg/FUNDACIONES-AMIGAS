@@ -1,0 +1,45 @@
+#destacadas{
+    text-align: center;
+    background: #fff;
+    color:#0075d9;
+    padding: 20px; 
+    }
+    
+    #destacadas .fundaciones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    
+    .fundaciones-destacadas{
+        margin: 20px;
+    }
+    
+    .fundaciones-destacadas img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 5px solid #0075d9;
+    }
+    .fundaciones-destacadas img:hover{
+        border: 6px solid #0b610b;
+        
+    }
+
+    .fundaciones-destacadas h2{
+        font-size: 30px;
+    
+    }
+    #barra h2{
+        margin-top: 5px;
+        background: #424242;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+    }
+    
+    
+    
+    
+    

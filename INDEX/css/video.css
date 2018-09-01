@@ -1,0 +1,58 @@
+#video{
+    width: 100%;
+    background: #424242;
+    display: flex;
+}
+.fund-video, video{
+    width: 90%;
+    margin: 10px;
+}
+
+.complemento-video{
+    color:#fff;
+    text-align: center;
+    width: 50%;
+    margin-top: 100px;
+    margin-right: 80px;
+    margin-left: 0;
+
+    }
+
+.complemento-video h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    
+    }   
+
+.complemento-video P{
+        width: 100%;
+        margin: auto;
+        text-align: justify;
+        }  
+
+@media (max-width:800px){
+    #video{
+        display: block;
+        margin:auto;
+    }
+}
+
+@media (max-width:800px){
+.complemento-video{
+    margin: auto;
+    padding: 15px 0px;
+    }
+}
+
+@media (max-width:800px){
+    .complemento-video h3{
+        font-size: 20px;
+        }
+    }
+
+@media (max-width:800px){
+    .complemento-video p{
+        font-size: 15px;
+        
+            }
+        }

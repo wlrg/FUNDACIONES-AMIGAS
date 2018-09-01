@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(../img/Niño-feliz.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*fondo este estatico*/
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+}
+
+.contenedor{
+    position: relative; 
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    max-width: 500px;
+    margin: 48px auto;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.contenedor .toggle{
+    top: 7px;
+    position: absolute;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid #0b610b;
+    border-bottom: 2px solid #0b610b;
+    transition: all .5s ease; /* una transision de 5 seg para que no se vea brusco el cambio al pasar el cursor */
+    cursor: pointer;    
+}
+
+.contenedor .toggle span{
+    letter-spacing: 1px; /* espaciado de fuente */
+}
+
+.contenedor .toggle:hover{
+    border-top: 2px solid #0075d9;
+    border-bottom: 2px solid #0075d9;
+    color: #81bef7
+    ;
+}
+
+.contenedor h2{
+    margin: 0 0 28px 0;
+    font-size: 20px; /*tamaño letra*/
+    font-weight: 400;
+    line-height: 1;
+}
+
+.contenedor input[type="text"],  /*boton tipo texto*/
+.contenedor input[type="password"], /*boton tipo password*/
+.contenedor input[type="email"]{ /*boton tipo email*/
+    outline: none;
+    background: rgba(0, 0, 0, .5);
+    display: block; /*ubicar los elementos en forma vertical*/
+    width: 93%;
+    padding: 10px 15px;
+    color: #81bef7;
+    border: none;
+    border-radius: 3px; /*redonderar las casillas de los botones*/
+    border-bottom: 3px solid #0b610b;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 20px 0; /*margen inferior 20px*/
+    transition: all .5s ease;
+}
+
+.contenedor input[type="text"]:focus,
+.contenedor input[type="password"]:focus,
+.contenedor input[type="email"]:focus{
+    border-bottom: 3px solid #0075d9;
+}
+
+.contenedor input[type="submit"]{
+    background: #0075d9;
+    color:#fff;
+    border: none; /*ningun borde*/
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor input[type="submit"]:hover{
+    background: #0b610b;
+}
+
+.contenedor .reset-password{
+    background: #0b610b;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-right-radius: 10px; /*el borde de abajo de la derecha curvo 10px*/
+    border-bottom-left-radius: 10px; /*el borde de abajo de la izquierda curvo 10px*/
+}
+
+.contenedor .reset-password a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contenedor .formulario{
+    padding: 40px;
+    display: none;
+}
+
+.contenedor .formulario:nth-child(2){ /*mostrar el segundo forulario hijo*/
+    display: block;
+}
+
+/* responsive*/
+
+@media (max-width:768px){ /*tamaño tablet*/
+    form{
+        width: 75%;
+    }
+}
+
+@media (max-width:480px){ /*tamaño celular*/
+    form{
+        width: 95%;
+    }
+}
+
+@media only screen and(max-width:768px){
+    body{
+        background: url(../img/Niño-feliz.jpg);
+    }
+}

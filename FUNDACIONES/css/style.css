@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-portada{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url(../img/bogota.jpg);
+    background-size: 250%;
+    animation: movimiento 50s infinite linear alternate;  
+}
+
+@keyframes movimiento { 
+    from{
+        background-position:  bottom left;
+    } to{
+        background-position:  top  right;
+    }
+}
+
+.container-detalles{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.detalles{
+    width: 100%;
+    max-width: 700px;
+    padding-right: 15px;
+    background: rgba(0, 0, 0, .7);
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    top: 40px;
+    color:#fff;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.detalles h1{
+    font-size: 40px;
+    font-weight: 100%;
+}
+
+.detalles p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.detalles button{
+    width: 200px;
+    padding: 10px 20px;
+    background: #0b610b;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 15px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.detalles button:hover{
+    background: #0075d9;
+}
+
+@media screen and (max-width: 750px){
+    .detalles{
+        max-width: 500px;
+        margin-left: 25px;
+    }
+    .detalles h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .detalles p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .detalles{
+        max-width: 400px;
+        margin-left: 0px;
+    }   
+    .detalles h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .detalles p{
+        font-size: 14px;
+        }
+}
+
+@media screen and (max-width: 450px){
+    .container-portada{
+        background-size: 350%;
+        
+    }
+
+    .detalles{
+        max-width: 300px;
+        margin-left: 0px;
+        padding: 10px;
+    }   
+    .detalles h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .detalles p{
+        font-size: 14px;
+        text-align: unset; 
+    }
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+footer{
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor-footer{
+    width: 100%;
+    background: #272727;
+    color: #fff;
+}
+
+.footer-main{
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-main .footer-columna{
+    width: calc(90% / 3); /*calcular del 100% dividir en 3 columnas*/
+    text-align: justify;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.footer-main .footer-columna:nth-child(2){
+    padding: 0 20px;
+}
+
+.footer-main .footer-columna h3{
+    font-size: 20px;
+    color: #0075d9;
+    margin-bottom: 20px;
+}
+
+.footer-main .footer-columna input[type="email"]{
+    border: none;
+    width: 100%;
+    border: 1px solid  #0075d9;
+    font-size: 14px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-main .footer-columna input[type="submit"]{
+    border: none;
+    color: #fff;
+    background: #0075d9;
+    padding: 10px 40px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: all .5s ease;
+}
+
+.footer-main .footer-columna input[type="submit"]:hover{
+    background: #0b610b;
+}
+  
+.footer-main .footer-columna span p {
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 28px;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+.redes{
+    width: 100%;
+    background: #0075d9;
+}
+
+.main-redes{
+    width: 98%;
+    max-width: 1000px;
+    padding: 15px 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-redes .derechos{
+    width: 70%;
+}
+
+.main-redes .redes{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-redes .redes a{
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color:#000;
+    text-align: center;
+
+
+}
+
+
+@media screen and (max-width: 750px){
+.redes{
+    display: block;
+}
+
+}
+@media screen and (max-width: 750px){
+    .derechos{
+        padding: 30px 100px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .footer-main .footer-columna h3{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .footer-main .footer-columna h3{
+            font-size:  15px;
+        }
+    }
+
+@media screen and (max-width: 750px){
+        .footer-main .footer-columna p{
+                font-size:  12px;
+            }
+        }

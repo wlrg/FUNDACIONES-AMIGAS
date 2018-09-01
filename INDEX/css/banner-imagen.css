@@ -1,0 +1,81 @@
+.imagen-responsive{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #E34E09;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    }
+
+.imagen-responsive .banner-imagen img{
+    width: 100%;
+    max-width: 850px;
+    height: 100%;
+}
+
+.imagen-responsive .text-banner{
+    width: 30%;
+    margin: auto;
+    color: #fff;
+    
+}
+
+.imagen-responsive .text-banner h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.imagen-responsive .text-banner p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    }
+
+ .imagen-responsive .btn-banner-color{
+     background: #fff;
+     padding: 10px 30px;
+     border: none;
+     border-radius: 5px;
+     font-size: 17px;
+     color: #E34E09;
+     margin-top: 30px;
+     cursor: pointer;
+     transition: all .5s ease;
+ }   
+
+ .imagen-responsive .btn-banner-color:hover{
+     background: #0075d9;
+     color: #fff;    
+    }
+
+    @media all and (max-width: 1300px){
+        .imagen-responsive .banner-imagen img{
+        width:600px;
+        }
+}
+     @media all and (max-width: 900px){
+       .imagen-responsive .banner-imagen img{
+        width:420%;
+
+        }
+}
+
+@media all and (max-width: 600px){
+    .imagen-responsive .banner-imagen img{
+     width:100%;
+     }
+}
+
+@media all and (max-width: 900px){
+    .imagen-responsive .text-banner{
+     width:80%;
+     margin-top: 18px;
+     margin-bottom: 18px;
+     }
+}
+
+@media all and (max-width: 900px){
+    .imagen-responsive .text-banner h2{
+     font-size: 30px;
+     }
+}

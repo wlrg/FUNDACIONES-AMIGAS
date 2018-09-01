@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+	margin: 0;
+	padding: 0;
+	Box-sizing: border-box;
+}
+
+ul,ol{
+	list-style: none;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.slideshow{
+	width: 100%;
+	position: relative;
+}
+
+.slider li, ul{
+	width: 100%;
+}
+
+.slider li{
+	overflow: hidden;
+}
+
+.slider li img{
+	width: 100%;
+}
+
+.slider .caption{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 15px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+}
+
+.slider .caption h1{
+	font-size: 60px;
+	color: #0075d9;
+	font-weight: bold;
+	
+}
+
+.slider .caption p{
+	margin-top: 10px;
+	font-size: 20px;
+	padding: 30px ;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 20px;
+}
+
+
+	
+.pagination{
+	position: absolute;
+	top: 102%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.pagination li{
+	font-size: 20px;
+	margin: 2px 5px;
+	color: #0075d9;
+	cursor: pointer;
+}
+
+.left, .right{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+
+.boton1 input[type="submit"]{
+    background: #0075d9;
+    color:#fff;
+    border: none; /*ningun borde*/
+	width: 40%;
+	border-radius: 20px;
+    padding: 10px 0;
+    font-weight: normal;
+	font-family: 'Work Sans', sans-serif;
+	letter-spacing: 1px;
+	font-size: 25px;
+	margin-top: 55px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+    cursor: pointer;
+	transition: all .10s ease;
+	display: block;
+}
+
+.boton1  input[type="submit"]:hover{
+	background: #0b610b;
+}
+
+
+
+
+@media screen and (max-width: 680px){
+	.slider .caption p{
+		display: none;
+	}
+
+	.slider .caption h1{
+		font-size: 30px;
+	}
+
+	.left, .right{
+		font-size: 30px;
+	}
+
+	.slider li img{
+		width: 680px;
+	}
+
+	.pagination{
+		display: none;
+	}
+}
+
+@media (max-width:680px){
+    .boton1 input[type="submit"]{
+		position: relative;
+		bottom: 40px;
+		font-size: 15px;
+	}
+} 
